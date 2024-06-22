@@ -16,6 +16,7 @@ export default async function getCategoryProducts(context, params) {
 
     url.searchParams.set('slug', params.input.categorySlug);
     url.searchParams.set('q', facetsUrl);
+    url.searchParams.set('order', params.input.sort);
     url.searchParams.set('page', params.input.page);
     url.searchParams.set('with_all_images', '0');
     url.searchParams.set('with_category_tree', '1');
